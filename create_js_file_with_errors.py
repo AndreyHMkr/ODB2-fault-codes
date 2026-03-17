@@ -86,3 +86,11 @@ class DatabaseManage:
             print(f"{index}. {file}{mark}")
 
         return json_files
+
+
+class AddNewOBDCode:
+    def __init__(self, code, description):
+        if not code or not description:
+            raise ValueError('Code and description cant be empty.')
+            self.code = code
+            self.description = description
